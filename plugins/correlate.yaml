@@ -2,8 +2,17 @@ apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
   name: correlate
+  annotations:
+    artifacthub.io/category: monitoring-logging
+    artifacthub.io/displayName: KubeCorrelate
+    artifacthub.io/keywords: |
+      - kubernetes
+      - logging
+      - monitoring
+      - events
+      - troubleshooting
 spec:
-  version: v0.1.4
+  version: v0.1.5
   homepage: https://github.com/Dasmat13/kubecorrelate
   shortDescription: Merge logs, events, and node pressures chronologically
   description: |
@@ -18,8 +27,8 @@ spec:
       matchLabels:
         os: darwin
         arch: amd64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_darwin_amd64.tar.gz
-    sha256: 36eae68c7a15f587818d633c3cc33e1df4e46b4607ff8eb6502fc1d12e0ee5ae
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_darwin_amd64.tar.gz
+    sha256: 452ed09c2d5ba714f3c3e9f572ae22fbeb89e21d0a396ef44905f51282f7f152
     bin: kubecorrelate
     files:
     - from: "kubecorrelate"
@@ -30,8 +39,8 @@ spec:
       matchLabels:
         os: darwin
         arch: arm64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_darwin_arm64.tar.gz
-    sha256: bfb7283f145526d8ae6ebad573f7afce1b3d6e86fcb9dfbe6117fc08ebef4a23
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_darwin_arm64.tar.gz
+    sha256: 3f3c5ca13fe93abf6d362548f87607afeaf5e54fb85ece23ef82c4ea21cd41f0
     bin: kubecorrelate
     files:
     - from: "kubecorrelate"
@@ -42,8 +51,8 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_linux_amd64.tar.gz
-    sha256: 3787248b7a77fc901d264f24a2bb97ebf54475ea94662020e07feab54904b3ba
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_linux_amd64.tar.gz
+    sha256: ab4292872e671436c9ebd32a913582dafa6658ed12292cf042a4eeb6eb173283
     bin: kubecorrelate
     files:
     - from: "kubecorrelate"
@@ -54,8 +63,8 @@ spec:
       matchLabels:
         os: linux
         arch: arm64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_linux_arm64.tar.gz
-    sha256: 3eaf589bb6c95810c5b304c6002c80575da9de01e48d7d1d9eeb01b9d4648e75
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_linux_arm64.tar.gz
+    sha256: b209592fbff111ee2aabe92e9225b68c32f3231c7150aabbf3c623b597faff98
     bin: kubecorrelate
     files:
     - from: "kubecorrelate"
@@ -66,8 +75,8 @@ spec:
       matchLabels:
         os: windows
         arch: amd64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_windows_amd64.zip
-    sha256: 6ce33593b64d207ce2137760ef4115bc6c3fccf88b0c8e1ca854a2d2cb4eed51
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_windows_amd64.zip
+    sha256: 8cfc02caf8042a5563ce7c85dd92b3617818bacf5fb90ad648866bb29827fd55
     bin: kubecorrelate.exe
     files:
     - from: "kubecorrelate.exe"
@@ -78,8 +87,8 @@ spec:
       matchLabels:
         os: windows
         arch: arm64
-    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.4/kubecorrelate_0.1.4_windows_arm64.zip
-    sha256: eefcfe38ddb47e502df8b6ab3ca620f43c25bd9a8d0fe524d15cb47010a83200
+    uri: https://github.com/Dasmat13/kubecorrelate/releases/download/v0.1.5/kubecorrelate_0.1.5_windows_arm64.zip
+    sha256: 98a4504369bce99774812e9d0d90bd76228c651d52765e06e8c488ebd42f2373
     bin: kubecorrelate.exe
     files:
     - from: "kubecorrelate.exe"
